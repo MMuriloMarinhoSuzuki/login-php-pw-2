@@ -1,0 +1,87 @@
+:root{
+    --bgColor1: #7d2c77;
+    --bgColor2: #3622f8;
+    --bgColor3: #b074ff;
+    --bgColor4: #ff1e8a;
+    --bgColor5: #e13f8a;
+    --bgColor6: #763cb4;
+    --fontColor1: #fff;
+}
+body {
+    background-image: linear-gradient(to left, #540ba3, #901281);
+    backdrop-filter: blur(2);
+}
+
+#titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--fontColor1);
+    font-weight: 900;
+    font-size: 1.4rem;
+}
+
+#login_container {
+    border-radius: 20px;
+    border: solid white 2px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+    width: 30%;
+    margin-left: 36%;
+    background-color: var(--bgColor1);
+}
+.itemLogin a{
+    color: black;
+}
+.itemLogin a:hover{
+    color: #b074ff;
+}
+.itemLogin,
+.itemImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: aliceblue;
+}
+
+.itemImg {
+    margin-top: 25%;
+    margin-bottom: 0;
+}
+
+input {
+    max-width: 180px;
+    border-radius: 10px;
+    height: 30px;
+}
+
+.itembtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    width: 32%;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--bgColor4);
+    padding: 1%;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--bgColor5);
+}
+
+#resultado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 30%;
+    margin-left: 35%;
+}
