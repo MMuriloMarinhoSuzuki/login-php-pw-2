@@ -20,19 +20,23 @@
                 <img src="./src/assets/img/iconUser.png" alt="">
             </div>
             <div class="itemLogin">
-                <label for="user">Usuário</label>
-                <input type="text" id="user"> <br>
-                <label for="senha">Senha</label>
-                <input type="password" id="senha">
-                <p id="esqueci"><a href="./senha.html">esqueci minha senha</a></p>
-            </div>
-            <div id="button">
-                <div class="itembtn"><button onclick="clickbtn()">login</button></div>
+                <form action="processaLogin.php" method="post">
+                    <label for="user">Usuário</label>
+                    <input type="text" id="user" name="Usuario"> <br>
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="Senha">
+                    <p id="esqueci"><a href="./senha.html">esqueci minha senha</a></p>
+                    <div id="button">
+                        <div class="itembtn"><button>login</button></div>
+                    </div>
+                </form>
             </div>
             <p id="resultado"></p>
+
         </section>
     </div>
 
-    <script src="./src/assets/js/script.js"></script>
+    <!-- <script src="./src/assets/js/script.js"></script> -->
 </body>
+
 </html>
