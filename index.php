@@ -35,15 +35,8 @@
                     </div>
                 </form>
                 <?php
-                $resultadoQuery = db_query("select * from db2ads where email = '$user' and senha = '$senha';", $mysqli);
-                if ($resultadoQuery) {
-                    if ($resultadoQuery->num_rows > 0) {
-                        $_SESSION['lg001'] ('deu certo');
-                    } else {
-                        $_SESSION['lg002']('não deu certo');
-                        header("Location:index.php");
-                    }
-                }
+                    $_SESSION['lg001']='Acesso Permitido';
+                    $_SESSION['lg002']='Acesso Negado';
                 ?>
             </div>
             <p id="resultado"></p>
